@@ -13,6 +13,20 @@
 		} );
 	} );
  
+	// link color  
+	wp.customize( 'link_color', function( value ) {
+		value.bind( function( to ) {
+			$( 'body a' ).css( 'cssText','color:'+to+' !important' );
+		} );
+	} );
+
+	// link hover color  
+	wp.customize( 'link_hvr_color', function( value ) {
+		value.bind( function( to ) {
+			$( 'body a:hover' ).css( 'cssText','color:'+to+' !important' );
+		} );
+	} );
+
 	// logo 
 	wp.customize( 'custom_logo', function( value ) {
 		value.bind( function( to ) {

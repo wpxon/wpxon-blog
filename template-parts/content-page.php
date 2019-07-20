@@ -8,7 +8,10 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
-	<?php wpxon_post_thumbnail(); ?>
+	<?php if(has_post_thumbnail()): ?>
+		<?php wpxon_post_thumbnail(); ?>
+		<br><br>
+	<?php endif; ?>
 	<div class="entry-content">
 		<?php
 		the_content();

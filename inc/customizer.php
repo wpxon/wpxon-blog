@@ -12,6 +12,39 @@
 function wpxon_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';  
+	//  link color
+	$wp_customize->add_setting( 'link_color' , array(
+	    'default'     => '',
+	    'transport'   => 'postMessage', 
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) ); 
+	$wp_customize->add_control( 
+		new WP_Customize_Color_Control( 
+		$wp_customize, 
+		'link_color', 
+		array(
+			'label'      => __( 'Link Color', 'wpxon-blog' ),
+			'section'    => 'colors',
+			'settings'   => 'link_color',
+		) ) 
+	);
+	//  link hover color
+	$wp_customize->add_setting( 'link_hvr_color' , array(
+	    'default'     => '',
+	    'transport'   => 'postMessage', 
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) ); 
+	$wp_customize->add_control( 
+		new WP_Customize_Color_Control( 
+		$wp_customize, 
+		'link_hvr_color', 
+		array(
+			'label'      => __( 'Link Hover Color', 'wpxon-blog' ),
+			'section'    => 'colors',
+			'settings'   => 'link_hvr_color',
+		) ) 
+	);
+	
 	// header deault text
 	$wp_customize->add_setting( 'header_default_text' , array(
 	    'default'     => '',
@@ -26,6 +59,7 @@ function wpxon_customize_register( $wp_customize ) {
 		'type'	 => 'text', 
         'description'   => __( 'Write header default text here.', 'wpxon-blog' )
 	) ); 
+
 	// footer settings
 	$wp_customize->add_section( 'v_copyright' , array(
 	    'title'      => __( 'Footer Settings', 'wpxon-blog' ),

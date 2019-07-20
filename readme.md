@@ -1,4 +1,4 @@
-# WPxon Blog v1.0.7
+# WPxon Blog v1.0.9
 ![WPxon Blog - Free Wordpress Theme](/screenshot.png)
 
 > Wpxon Blog is a clean and creative responsive blog theme for writers, bloggers & photographers. The theme is responsive, it is fully compatible with mobile phones, desktop computers and tablets. You can create a beautiful website with this theme.
@@ -94,6 +94,13 @@ CC0-licensed (GPL-compatible) images from https://www.pexels.com/
 
 ## Changelog 
   
+### 1.0.9 - July 20, 2019  
+* Banner Section Added.
+* CSS issue fixed.
+
+### 1.0.8 - May 24, 2019  
+* Link Color & Link Hover color settings added to the customizer panel.
+
 ### 1.0.7 - Apr 13, 2019 
 * Breadcrumb responsive issue fixed. 
 

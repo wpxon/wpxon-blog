@@ -291,7 +291,39 @@ function wpxon_breadcrumb(){
  */
 add_action('admin_print_scripts', 'wpxon_blog_post_formate_display_procedure', 1000);
 
-function wpxon_blog_post_formate_display_procedure(){ ?>
+function wpxon_blog_post_formate_display_procedure(){ ?> 
+    <?php if(get_post_type() == 'page') : ?>
+        <script>
+            jQuery(document).ready(function(){
+                var id = jQuery( '#_wpxon_blog_banner_style option:selected' ).val();
+                var desc = jQuery('.cmb2-id--wpxon-blog-banner-style .cmb2-metabox-description').text();
+                if(id == '2'){
+                    jQuery('.cmb2-id--wpxon-blog-banner-img').show();
+                    jQuery('.cmb2-id--wpxon-blog-banner-style .cmb2-metabox-description').text('Use the below image uploader to set the Feature Banner.');                  
+                }else{
+                    jQuery('.cmb2-id--wpxon-blog-banner-img').hide();
+                    jQuery('.cmb2-id--wpxon-blog-banner-style .cmb2-metabox-description').text(desc);
+                }    
+
+                jQuery( '#_wpxon_blog_banner_style' ).change(function(){
+                    
+                    jQuery('.cmb2-id--wpxon-blog-banner-img').hide();  
+
+                    var id = jQuery( '#_wpxon_blog_banner_style option:selected' ).val(); 
+
+                    if(id == '2'){
+                        jQuery('.cmb2-id--wpxon-blog-banner-style .cmb2-metabox-description').text('Use the below image uploader to set the Feature Banner.');
+                        jQuery('.cmb2-id--wpxon-blog-banner-img').show();
+                    }else{
+                        jQuery('.cmb2-id--wpxon-blog-banner-img').hide();
+                        jQuery('.cmb2-id--wpxon-blog-banner-style .cmb2-metabox-description').text(desc);
+                    }  
+
+                });
+            })
+        </script> 
+    <?php endif; ?> 
+
     <?php if(get_post_type() == 'post') : ?>
         <script>
             jQuery(document).ready(function(){

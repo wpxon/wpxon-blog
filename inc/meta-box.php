@@ -6,6 +6,44 @@ function wpxon_core_meta_box() {
 	$meta_prefix = '_wpxon_blog_'; 
  
 	/**=====================================================================
+	 * Page Meta
+	 =====================================================================*/ 
+
+	$cmb2_PageOpt = new_cmb2_box( array(
+		'id'           => $meta_prefix . 'page_extras',
+		'title'        => __( 'Page Settings', 'wpxon-blog' ),
+		'object_types' => array( 'page'), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high',
+		'show_names'   => true, // Show field names on the left
+		//'show_on'      => array( 'id' => array( 2, ) ), // Specific post IDs to display this metabox
+	) );
+
+	$cmb2_PageOpt->add_field( array(
+	    'name'             =>  __( 'Banner Styles', 'wpxon-blog' ),
+	    'id'               => $meta_prefix.'banner_style',
+	    'type'             => 'select',
+	    'default'          => '1',
+	    'options'          => array(
+	        '1'          	=> __( 'Default', 'wpxon-blog' ), 
+	        '2'          	=> __( 'Featured Banner', 'wpxon-blog' ) 
+	    ), 
+	    'desc'             => __( 'Go to customizer to upload/change the Default Banner image.','wpxon-blog' ),
+	) ); 
+	$cmb2_PageOpt->add_field( array(
+	    'name'             =>  __( 'Featured Banner', 'wpxon-blog' ),
+	    'id'               => $meta_prefix.'banner_img',
+	    'desc'             => __( 'Upload banner image from here.','wpxon-blog' ),
+	    'type'             => 'file',
+		'options' 		   => array(
+			'url'			=> false
+		),
+		'preview_size' 	   => array( 300, 80 ),
+	) );
+ 
+
+
+	/**=====================================================================
 	 * metabox for post formates
 	 =====================================================================*/  
 

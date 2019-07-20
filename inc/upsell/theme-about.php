@@ -85,10 +85,37 @@ function wpxon_blog_about_page() {
 					
 					<ul class="single-update">
 						<li class="head">
-							<?php esc_html_e('1.0.7 - March 29, 2019','wpxon-blog'); ?>
+							<?php esc_html_e('1.0.9 - July 20, 2019','wpxon-blog'); ?>
 						</li> 
 						<li class="list">
-							<?php esc_html_e('Post format feature added..','wpxon-blog'); ?>
+							<?php esc_html_e('Banner Section Added.','wpxon-blog'); ?>
+						</li> 
+						<li class="list">
+							<?php esc_html_e('CSS issue fixed.','wpxon-blog'); ?>
+						</li> 
+					</ul> 
+					<ul class="single-update">
+						<li class="head">
+							<?php esc_html_e('1.0.8 - May 24, 2019 ','wpxon-blog'); ?>
+						</li> 
+						<li class="list">
+							<?php esc_html_e('Link Color & Link Hover color settings added to the customizer panel.','wpxon-blog'); ?>
+						</li> 
+					</ul> 
+					<ul class="single-update">
+						<li class="head">
+							<?php esc_html_e('1.0.7 - Apr 13, 2019 ','wpxon-blog'); ?>
+						</li> 
+						<li class="list">
+							<?php esc_html_e('Breadcrumb responsive issue fixed. ','wpxon-blog'); ?>
+						</li> 
+					</ul> 
+					<ul class="single-update">
+						<li class="head">
+							<?php esc_html_e('1.0.6 - March 29, 2019','wpxon-blog'); ?>
+						</li> 
+						<li class="list">
+							<?php esc_html_e('Post format feature added.','wpxon-blog'); ?>
 						</li>
 						<li class="list">
 							<?php esc_html_e('css style issues improved.','wpxon-blog'); ?>

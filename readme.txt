@@ -3,7 +3,7 @@ Contributors: wpxon
 Tags: news, blog, photography, two-columns, three-columns, left-sidebar, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, sticky-post,  translation-ready
 Requires at least: 4.0
 Tested up to: 5.0.2 
-Stable tag: 1.0.7
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,14 @@ The Wpxon Blog WordPress theme is 100% GPLv2. See headers of files for further d
 * Bootstrap © 2011-2016 Twitter, MIT, http://getbootstrap.com     
   
 == Changelog ==
-   
+    
+= 1.0.9 - July 20, 2019  =
+* Banner Section Added.
+* CSS issue fixed.
+
+= 1.0.8 - May 24, 2019 =
+* Link Color & Link Hover color settings added to the customizer panel.
+
 = 1.0.7 - Apr 13, 2019 =
 * Breadcrumb responsive issue fixed.
 

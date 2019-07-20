@@ -18,6 +18,7 @@
 	<?php wp_head(); ?>
 </head> 
 <body <?php body_class(); ?>> 
+    <?php global $post; ?>
     <div class="wpxon-wrapper">    
         <header class="wpxon-header">
             <div class="main-menu-area-one">
@@ -42,15 +43,31 @@
                 <?php wpxon_mobile_menu(); ?> 
             </div>
         </nav>   
-        <div id="page-title-wrap">
+
+        <?php  
+            if(is_page()){  
+                $wpxon_hdr_switch = get_post_meta($post->ID,'_wpxon_blog_banner_style',true);  
+                if($wpxon_hdr_switch=='2'){
+                    $wpxon_hdr_img = true;
+                }else{
+                    $wpxon_hdr_img = false;    
+                }
+            }else{
+                $wpxon_hdr_img = false; 
+                $wpxon_hdr_switch = '1';   
+            }
+        ?> 
+        <div id="page-title-wrap" class="<?php echo ($wpxon_hdr_img)? 'extra-height' : ''; ?>">
             <div class="container">
-                <h1 class="page-title <?php echo (is_front_page() && is_home()) ? 'text-center' : ''; ?>">
-                    <?php wpxon_breadcrumb(); ?>
-                </h1>
-                <?php if(!is_front_page() && !is_home()): ?>
-                    <div id="crumbs">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Home','wpxon-blog'); ?></a>  <span class="current"><?php wpxon_breadcrumb(); ?></span>
-                    </div>
+                    <h1 class="page-title <?php echo (is_front_page() && is_home()) ? 'text-center' : ''; ?>">
+                        <?php wpxon_breadcrumb(); ?>
+                    </h1> 
+                <?php if($wpxon_hdr_switch!='2'): ?>
+                    <?php if(!is_front_page() && !is_home()): ?>
+                        <div id="crumbs">
+                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Home','wpxon-blog'); ?></a>  <span class="current"><?php wpxon_breadcrumb(); ?></span>
+                        </div>
+                    <?php endif; ?>
                 <?php endif; ?>
             </div> 
         </div>
