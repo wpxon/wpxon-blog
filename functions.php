@@ -27,6 +27,7 @@ if ( ! function_exists( 'wpxon_setup' ) ) :
 		add_theme_support( 'title-tag' ); 
 		// Image size declaration. 
 		add_image_size('wpxon-blog',630,360,true); 
+		add_image_size('wpxon-blog-slider',445,290,true); 
 		// Enable support for Post Thumbnails on posts and pages.
 		add_theme_support( 'post-thumbnails' );
 		// This theme uses wp_nav_menu() in one location.
@@ -204,6 +205,7 @@ function wpxon_scripts() {
     	}
     }else{
     	$wpxon_hdr_img = get_header_image();	
+        $wpxon_hdr_switch = get_theme_mod( 'choice_header' );
     }
     
     if(isset($wpxon_hdr_img) && !empty($wpxon_hdr_img)){ 

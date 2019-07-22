@@ -237,13 +237,13 @@ function wpxon_copyright(){
         <p><?php echo wp_kses_post($copy_text); ?></p>
     <?php
     }else{
+        $url1 =  esc_url('http://whatisbox.com/'); 
         $url2 =  esc_url('http://wpxon.com/'); 
         $text =  esc_html__('Copyright &copy; 2019 ','wpxon-blog');
-        $text2 =  get_bloginfo('name');
-        $text3 =  ' |';
-        $text4 = $text.$text2.$text3;
-        $text5 =  esc_html__('Wpxon','wpxon-blog');
-        printf( '<p>%s Powered by <a class="credits" href="%s">%s</a></p>', esc_html($text4), esc_url($url2), esc_html($text5) );
+        $text2 =  'whatisbox';
+        $text3 =  ' |'; 
+        $text5 =  esc_html__('WPxon','wpxon-blog');
+        printf( '<p>%s<a class="credits" href="%s">%s</a> | Powered by <a class="credits" href="%s" target="_blank">%s</a></p>', esc_html($text),esc_url($url2), esc_html($text5), esc_url($url1), esc_html($text2) );
     }
 }
 /**

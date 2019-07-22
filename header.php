@@ -49,13 +49,24 @@
                 $wpxon_hdr_switch = get_post_meta($post->ID,'_wpxon_blog_banner_style',true);  
                 if($wpxon_hdr_switch=='2'){
                     $wpxon_hdr_img = true;
+                }elseif($wpxon_hdr_switch=='1'){
+                    $wpxon_hdr_img = false;   
                 }else{
                     $wpxon_hdr_img = false;    
                 }
-            }else{
-                $wpxon_hdr_img = false; 
-                $wpxon_hdr_switch = '1';   
+            }else{ 
+                $wpxon_hdr_switch =  get_theme_mod( 'choice_header' );
+                if($wpxon_hdr_switch=='2'){
+                    $wpxon_hdr_img = true;
+                }elseif($wpxon_hdr_switch=='1'){
+                    $wpxon_hdr_img = false;   
+                }else{
+                    $wpxon_hdr_img = false;    
+                }
             }
+            if($wpxon_hdr_switch=='3'):
+                get_template_part( 'inc/slider');
+            else:
         ?> 
         <div id="page-title-wrap" class="<?php echo ($wpxon_hdr_img)? 'extra-height' : ''; ?>">
             <div class="container">
@@ -71,3 +82,4 @@
                 <?php endif; ?>
             </div> 
         </div>
+        <?php  endif; ?>

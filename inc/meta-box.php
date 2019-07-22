@@ -26,7 +26,8 @@ function wpxon_core_meta_box() {
 	    'default'          => '1',
 	    'options'          => array(
 	        '1'          	=> __( 'Default', 'wpxon-blog' ), 
-	        '2'          	=> __( 'Featured Banner', 'wpxon-blog' ) 
+	        '2'          	=> __( 'Featured Banner', 'wpxon-blog' ) ,
+	        '3'          	=> __( 'Post Slider', 'wpxon-blog' ), 
 	    ), 
 	    'desc'             => __( 'Go to customizer to upload/change the Default Banner image.','wpxon-blog' ),
 	) ); 

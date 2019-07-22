@@ -85,6 +85,14 @@ function wpxon_blog_about_page() {
 					
 					<ul class="single-update">
 						<li class="head">
+							<?php esc_html_e('1.1.0 - July 22, 2019','wpxon-blog'); ?>
+						</li> 
+						<li class="list">
+							<?php esc_html_e('Post Slider Added.','wpxon-blog'); ?>
+						</li>  
+					</ul> 
+					<ul class="single-update">
+						<li class="head">
 							<?php esc_html_e('1.0.9 - July 20, 2019','wpxon-blog'); ?>
 						</li> 
 						<li class="list">
