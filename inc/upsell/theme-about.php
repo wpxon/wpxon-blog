@@ -85,6 +85,14 @@ function wpxon_blog_about_page() {
 					
 					<ul class="single-update">
 						<li class="head">
+							<?php esc_html_e('1.1.1 - Aug 1, 2019','wpxon-blog'); ?>
+						</li> 
+						<li class="list"> 
+							<?php esc_html_e('Recommended Smart Author Box Plugin. This plugin will show the author\'s biography below articles. This is a responsive author box at the end of your posts, which will display the author name, author gravatar and author description withs social icons.','wpxon-blog'); ?>
+						</li>  
+					</ul> 
+					<ul class="single-update">
+						<li class="head">
 							<?php esc_html_e('1.1.0 - July 22, 2019','wpxon-blog'); ?>
 						</li> 
 						<li class="list">

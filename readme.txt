@@ -3,7 +3,7 @@ Contributors: wpxon
 Tags: news, blog, photography, two-columns, three-columns, left-sidebar, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, sticky-post,  translation-ready
 Requires at least: 4.0
 Tested up to: 5.0.2 
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,10 @@ The Wpxon Blog WordPress theme is 100% GPLv2. See headers of files for further d
 * Bootstrap © 2011-2016 Twitter, MIT, http://getbootstrap.com     
   
 == Changelog ==
-    
+     
+= 1.1.1 - Aug 1, 2019 =
+* Smart Author Box Plugin recommended. 
+
 = 1.1.0 - July 22, 2019  =
 * Post Slider Added.
 
@@ -72,3 +75,11 @@ The Wpxon Blog WordPress theme is 100% GPLv2. See headers of files for further d
 
 = 1.0.1 - January 1, 2019 =
 * pot file updated.
+
+
+
+== Upgrade Notice ==
+
+= 1.1.1 - Aug 1, 2019 =
+* Recommended Smart Author Box Plugin. This plugin will show the author's biography below articles. This is a responsive author box at the end of your posts, which will display the author name, author gravatar and author description withs social icons.
+ 

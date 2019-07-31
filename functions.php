@@ -241,7 +241,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Required Plugins additions.
  */ 
-require get_template_directory() . '/inc/required-plugins.php';
+require get_template_directory() . '/inc/recommended-plugins.php';
 if(class_exists('CMB2_Bootstrap_260')){
 	require get_template_directory() . '/inc/meta-box.php';
 }

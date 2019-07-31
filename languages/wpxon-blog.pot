@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPxon Blog v1.1.0\n"
+"Project-Id-Version: WPxon Blog v1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2019-07-22 16:35:12+0000\n"
@@ -992,7 +992,7 @@ msgstr ""
 
 #: inc/upsell/theme-about.php:88
 #@ wpxon-blog
-msgid "1.1.0 - July 22, 2019"
+msgid "1.1.1 - July 22, 2019"
 msgstr ""
 
 #: inc/upsell/theme-about.php:91
